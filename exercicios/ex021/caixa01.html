@@ -1,0 +1,121 @@
+<!--
+     border-width: 10px;
+     Abreviação que define as quatro propriedades 'border-*-width'. Se tiver quatro valores, eles definem superior, direito, inferior e esquerdo nessa ordem. Se a esquerda estiver faltando, é o mesmo que a direita; se estiver faltando o fundo, é o mesmo que o topo; se o direito estiver faltando, é o mesmo que o topo.
+
+Sintaxe: <line-width>{1,4}
+      
+-->
+<!--
+    padding-top
+    enchimento-top
+A propriedade CSS de preenchimento define a altura da área de preenchimento na parte superior de um elemento.
+-->
+<!--
+    padding-right
+    enchimento-direito
+A propriedade CSS à direita do preenchimento define a largura da área de preenchimento à direita de um elemento.
+-->
+<!--
+    padding-bottom:
+    enchimento-fundo
+A propriedade CSS com fundo de enchimento define a altura da área de preenchimento na parte inferior de um elemento.
+
+-->
+<!--
+    padding-left:;
+    
+Resumo
+A propriedade CSS padding-left é um elemento que define o espaço de preenchimento obrigatório no lado esquerdo de um elemento. padding area é o espaço entre o conteúdo do elemento e a borda. Um valor negativo não é permitido.
+-->
+<!--
+    margin-top
+    A propriedade CSS margem-top de um elemento indica o espaço acima do elemento. Valores negativos são aceitos.
+
+Essa propriedade não tem efeito em elementos não substituídos elementos inline, como <tt> (en-US) ou <span>.
+    
+-->
+<!--
+    margin-right
+    margem-direita
+A propriedade CSS com margem direita define a área de margem no lado direito de um elemento. Um valor positivo o coloca mais longe de seus vizinhos, enquanto um valor negativo o coloca mais perto.
+-->
+<!--
+     margin-bottom:
+     margin-bottom
+Experimente
+A propriedade CSS  margin-bottom  define a margin area na parte inferior de um elemento. Um valor positivo coloca o valor mais longe de outros elementos vizinhos, enquanto um valor negativo, aproxima.
+
+
+-->
+<!--
+     margin-left:
+     A propriedade CSS de margem esquerda define a área de margem no lado esquerdo de um elemento. Um valor positivo o coloca mais longe de seus vizinhos, enquanto um valor negativo o coloca mais perto.
+-->
+<!--
+    margin:
+    A propriedade margin do CSS define a área de margem nos quatro lados do elemento. É uma abreviação que define todas as margens individuais de uma só vez: margin-top, margin-right (en-US), margin-bottom, e margin-left (en-US).
+
+
+-->
+<!--
+            outline-width:
+            
+            largura de contorno
+A propriedade CSS define a espessura do contorno de um elemento. Um contorno é uma linha que é desenhada em torno de um elemento, fora da fronteira.
+            
+outline-style:
+            
+            A propriedade CSS estilo contorno define o estilo do contorno de um elemento. Um contorno é uma linha que é desenhada em torno de um elemento, fora da fronteira.
+            
+            outline-color:
+            contorno-cor
+A propriedade CSS de cor de contorno define a cor do contorno de um elemento.
+-->
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Caixas</title>
+    <style>
+        /*box-level*/
+        h1 {
+            background-color: lightgray;
+            height: 300px;
+            width: 300px;
+            
+            border: 10px solid darkslategray;
+            
+            padding: 10px 20px;
+            
+            margin: 20px auto 40px auto;
+
+            outline: 5px dashed salmon;
+
+        }
+        /*inline-level*/
+        a{
+            border-width: 10px;
+            border-style: solid;
+            border-color: red;
+
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixa box-level</h1>
+    <p>Parágrafos também são exemplos de box-level, mas os <a href="#">links são exemplosde caixas inline-level.</a> Vamos ver como tudo isso funciona.</p>
+</body>
+</html>
