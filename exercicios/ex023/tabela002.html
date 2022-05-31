@@ -21,6 +21,15 @@
             background-color: gray;
             color: white;
         }
+        td.num{
+            text-align: right;
+        }
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
     </style>
 </head>
 <body>
@@ -28,6 +37,7 @@
     <!--
         ANATOMIA PARA TABELAS GRANDES 
         TABLE
+             CAPTION
              THEAD
                   TR, TD, TH
              TBODY
@@ -36,10 +46,11 @@
                   TR,TD,TH
     -->
     <table>
+        <caption>População das Unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População (2021)</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 100px;">População (2021)</th>
             </tr>
         </thead>
         <tbody>
@@ -150,13 +161,13 @@
             </tr>
             <tr>
                 <td>Roraima</td>
-                <td>652 713</td>
+                <td class="num">652 713</td>
             </tr>
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
-                <td>213 317 639</td>
+                <th scope="row">Total de Habitantes</th>
+                <td class="num"><strong>213 317 639</strong></td>
             </tr>
             
         </tfoot>
